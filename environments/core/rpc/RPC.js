@@ -36,19 +36,19 @@ class RichPresence {
         });
     }
 
-    setActivity(title) {
+    setActivity() {
         this.client
             .setActivity({
-                details: title || "Scratch For Discord",
+                details: "Scratch For Discord Preview 469",
                 startTimestamp: this.startedAt,
                 buttons: [
                     {
-                        label: "Download",
-                        url: "https://androz2091.github.io/scratch-for-discord/download/index.html"
+                        label: "Download From AHQ Servers",
+                        url: "https://ahqsoftwares.github.io/scratch-for-discord/download/index.html"
                     }
                 ],
                 largeImageKey: "large",
-                largeImageText: `Scratch For Discord - v${packageMeta.version}`,
+                largeImageText: `Scratch For Discord Preview 469 app -v${packageMeta.version}`,
                 smallImageKey: "small",
                 smallImageText: "Scratch For Discord"
             })
