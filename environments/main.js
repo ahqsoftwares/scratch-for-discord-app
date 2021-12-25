@@ -6,6 +6,8 @@ const updater = new Updater();
 const rpc = require("./core/rpc/RPC");
 require("./core/storage/database");
 const S4D_PROTOCOL = "s4d";
+const ahqdb = require("easy-json-database");
+const ahq = new ahqdb()
 let tray = null,
     mainWindow;
 
