@@ -41,7 +41,7 @@ const ScratchNative = {
     DISCORD_COMMUNITY: "https://discord.gg/QemqGz63ju",
     openURL: (url) => void shell.openExternal(url),
     SCRATCH_SERVER() {
-        return db.get("scratchServer") || "https://scratch-for-discord.netlify.app";
+        return db.get("scratchServer") || "https://deploy-preview-469--scratch-for-discord.netlify.app";
     },
     theme: () => {
         const isDark = db.get("darkMode") || false;
@@ -55,8 +55,8 @@ const ScratchNative = {
         return isDark;
     },
     donations: {
-        patreon: "https://www.patreon.com/Androz2091",
-        paypal: "https://paypal.me/devsnowflake"
+        patreon: "",
+        paypal: ""
     }
 };
 
