@@ -44,7 +44,7 @@ class RichPresence {
                 buttons: [
                     {
                         label: "Download From AHQ Servers",
-                        url: "https://ahqsoftwares.github.io/scratch-for-discord/download/index.html"
+                        url: "https://ahqsoftwares.github.io/scratch-for-discord-app/index.html"
                     }
                 ],
                 largeImageKey: "large",
