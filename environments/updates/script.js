@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const state = document.getElementById("status");
 
     ipcRenderer.on("checking-for-update", (e) => {
-        state.innerHTML = "Checking for updates...";
+        state.innerHTML = "Checking for updates from AHQSoftwares DB...";
     });
 
     ipcRenderer.on("new-update", (e, version) => {

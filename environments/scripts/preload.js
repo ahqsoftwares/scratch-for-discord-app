@@ -37,11 +37,11 @@ const ScratchNative = {
             ipcRenderer.removeAllListeners(event);
         }
     },
-    DISCORD_INVITE: "https://androz2091.fr/discord",
-    DISCORD_COMMUNITY: "https://discord.gg/QemqGz63ju",
+    DISCORD_INVITE: "https://discord.gg/RYppCpQuQV",
+    DISCORD_COMMUNITY: "https://discord.gg/RYppCpQuQV",
     openURL: (url) => void shell.openExternal(url),
     SCRATCH_SERVER() {
-        return db.get("scratchServer") || "https://scratch-for-discord.netlify.app";
+        return db.get("scratchServer") || "https://deploy-preview-469--scratch-for-discord.netlify.app/";
     },
     theme: () => {
         const isDark = db.get("darkMode") || false;

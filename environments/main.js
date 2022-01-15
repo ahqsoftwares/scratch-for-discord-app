@@ -59,12 +59,12 @@ async function createWindow() {
         {
             label: "Discord Server",
             type: "normal",
-            click: () => shell.openExternal("https://androz2091.fr/discord")
+            click: () => shell.openExternal("https://discord.gg/RYppCpQuQV")
         },
         {
             label: "GitHub",
             type: "normal",
-            click: () => shell.openExternal("https://github.com/Androz2091/scratch-for-discord")
+            click: () => shell.openExternal("https://github.com/frostzzone/scratch-for-discord")
         },
         {
             label: "Check for updates",
@@ -107,7 +107,7 @@ async function createWindow() {
             type: "question",
             buttons: ["Yes", "No"],
             title: "Confirm",
-            message: "Do you really want to quit Scratch For Discord?"
+            message: "Do you really want to quit Scratch For Discord Fork 469 devs?"
         });
 
         if (response.response === 1) return;

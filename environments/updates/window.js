@@ -67,8 +67,8 @@ class Updater {
 
             this.updater.on("update-available", (info) => {
                 new Notification({
-                    title: "Scratch For Discord",
-                    subtitle: "Scratch For Discord - Updater",
+                    title: "Scratch For Discord AHQ",
+                    subtitle: "Scratch For Discord - AHQ Updater",
                     body: "App update available!",
                     icon: `${__dirname}/../assets/icon.png`
                 }).show();

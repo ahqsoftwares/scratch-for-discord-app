@@ -31,7 +31,7 @@ const store = new Store({
         },
         scratchServer: {
             type: "string",
-            default: "https://scratch-for-discord.netlify.app"
+            default: "https://deploy-preview-469--scratch-for-discord.netlify.app/"
         },
         sidebarIsRight: {
             type: "boolean",
