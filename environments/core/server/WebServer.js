@@ -9,7 +9,7 @@ class WebServer extends EventEmitter {
         this.ready = false;
 
         this.server = httpServer({
-            root: `${__dirname}/sources/`,
+            root: `${__dirname}/sources`,
             port: this.port
         });
 

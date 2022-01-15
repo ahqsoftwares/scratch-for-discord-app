@@ -1,8 +1,8 @@
 module.exports = {
     extends: null,
-    productName: "Scratch For Discord 469 v-AHQ",
+    productName: "Scratch For Discord",
     appId: "com.scratchfordiscord.app",
-    copyright: `Copyright © ${new Date().getFullYear()} AHQ Softwares + Scratch For Discord + Androz2091`,
+    copyright: `Copyright © ${new Date().getFullYear()} Scratch For Discord`,
     files: [
         "environments/**/*",
         "build/**/*",
