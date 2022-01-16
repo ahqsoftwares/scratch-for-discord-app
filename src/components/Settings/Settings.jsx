@@ -52,33 +52,20 @@ export default function Settings() {
                                         <option value="off">Disable</option>
                                     </select>
                                 </div>
-
                                 <div className="space-y-3">
                                     <label htmlFor="scratchSourceUrl" className="text-xl dark:text-white text-black opacity-90">
                                         <FontAwesomeIcon icon={faNetworkWired} /> Scratch Server
                                     </label>
-                                    <input
-                                        ref={scratchServerElm}
-                                        type="url"
-                                        id="scratchSourceUrl"
-                                        autoComplete="false"
-                                        className="w-1/2 px-4 py-1 form-input block rounded-md text-blurple-400 font-semibold bg-gray-100 border-transparent focus:border-gray-500 dark:focus:bg-white focus:ring-0"
-                                        placeholder="Ex: https://scratch-for-discord.netlify.app"
-                                        defaultValue={get("scratchServer")}
-                                        onKeyUp={(e) => {
-                                            if (e.keyCode === 13) {
-                                                e.preventDefault();
-                                                const content = e.target.value || "";
-                                                if (content && !URL_VERIFY_REGEX.test(content)) return alert("Unsupported server!");
-                                                window.ScratchNative?.sendMessage("setServer", content);
-                                                refresh();
-                                                e.target.focus();
-                                                e.target.readOnly = false;
-                                            }
-                                        }}
-                                    />
+                                    <br />
+                                    <select
+                                        id="sidebarSettings"
+                                        defaultValue={get("scratchServer") ? "https://deploy-preview-469--scratch-for-discord.netlify.app/" : "https://scratch-for-discord.netlify.app/"}
+                                        className="form-select px-4 py-1 w-1/2 mt-1 rounded-md bg-gray-100 border-transparent focus:border-gray-500 dark:focus:bg-white focus:ring-0"
+                                    >
+                                        <option value="https://deploy-preview-469--scratch-for-discord.netlify.app/">https://deploy-preview-469--scratch-for-discord.netlify.app/</option>
+                                        <option value="https://scratch-for-discord.netlify.app/">https://scratch-for-discord.netlify.app/</option>
+                                    </select>
                                 </div>
-
                                 <div className="space-y-3">
                                     <label htmlFor="sidebarSettings" className="text-xl dark:text-white text-black opacity-90">
                                         <FontAwesomeIcon icon={faBars} /> Sidebar Position
