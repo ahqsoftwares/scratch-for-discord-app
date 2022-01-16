@@ -44,13 +44,17 @@ class RichPresence {
                 buttons: [
                     {
                         label: "Download",
-                        url: "https://androz2091.github.io/scratch-for-discord/download/index.html"
+                        url: "https://ahqsoftwares.github.io/scratch-for-discord-app/"
+                    },
+                    {
+                        label: "Online Version",
+                        url: "https://deploy-preview-469--scratch-for-discord.netlify.app/"
                     }
                 ],
                 largeImageKey: "large",
-                largeImageText: `Scratch For Discord - v${packageMeta.version}`,
+                largeImageText: `Scratch For Discord - v${packageMeta.version} * 469`,
                 smallImageKey: "small",
-                smallImageText: "Scratch For Discord"
+                smallImageText: "s4d 469"
             })
             .catch((e) => {
                 console.error(e);
