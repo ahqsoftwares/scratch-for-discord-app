@@ -1,5 +1,4 @@
 const ipcRenderer = require("electron").ipcRenderer;
-const files = require("../../../comment.json");
 document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("currentVersion").innerText = (require(`${__dirname}/../../package.json`).version) || "2.0.0-dev";
 
