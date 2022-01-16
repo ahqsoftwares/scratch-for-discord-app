@@ -1,7 +1,7 @@
 const ipcRenderer = require("electron").ipcRenderer;
 const files = require("../../../comment.json");
 document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById("currentVersion").innerText = require(`${__dirname}/../../package.json`).version || "2.0.0-dev";
+    document.getElementById("currentVersion").innerText = (require(`${__dirname}/../../package.json`).version) || "2.0.0-dev";
 
     const state = document.getElementById("status");
     ipcRenderer.on("checking-for-update", (e) => {
@@ -9,15 +9,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     ipcRenderer.on("new-update", (e, version) => {
-        let type = "patch";
-        if ((`${__dirname}/../../package.json`).version - version < 1) {
-        type="minor";
-        } else if((`${__dirname}/../../package.json`).version - version < 0.1) {
-        type= "patch"
-        } else {
-            type= "major"
-        }
-        state.innerHTML = `Update found Current Version Type: ${files.latest} Update Type: <b>${type}</b> Tag: <b>${version}</b>!`;
+        state.innerHTML = `Update found 
+        Your Update Type: <b>${(require(`${__dirname}/../../package.json`).version)}</b>
+        New ahq update type: <b>VERY VERY IMPORTANT!</b>
+        Tag: <b>${version}</b>!`;
     });
 
     ipcRenderer.on("download-progress", (e, progress) => {

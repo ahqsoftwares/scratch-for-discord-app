@@ -78,7 +78,7 @@ export default function HomeScreen() {
                             <h1 className="text-5xl opacity-90">Scratch For Discord</h1>
                             <p className="text-2xl opacity-70">v{window.ScratchNative?.version ?? "1.0.0"}</p>
                             <p className="text-2xl opacity-70">
-                                Build {window.ScratchNative?.info.platform}-{window.ScratchNative?.version ?? "1.0.0"}-{window.ScratchNative?.info.versions.node}
+                                Build 469 {window.ScratchNative?.info.platform}
                             </p>
                             <div className="my-5">
                                 <h1 className="text-3xl opacity-70">Donate:</h1>
