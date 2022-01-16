@@ -70,16 +70,16 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/scratch-for-discord/scratch-for-discord-app.git"
+    "url": "git+https://github.com/ahqsoftwares/scratch-for-discord-app.git"
   },
   "keywords": [
     "scratch",
     "discord",
     "bot"
   ],
-  "author": "Scratch For Discord",
+  "author": "Scratch For Discord && AHQ && 469 s4d team",
   "bugs": {
-    "url": "https://github.com/scratch-for-discord/scratch-for-discord-app/issues"
+    "url": "https://github.com/ahqsoftwares/scratch-for-discord-app/issues"
   },
   "homepage": "./"
 }
