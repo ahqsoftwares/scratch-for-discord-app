@@ -1,6 +1,6 @@
 module.exports = {
     extends: null,
-    productName: "Scratch For Discord",
+    productName: "Scratch For Discord 469",
     appId: "com.scratchfordiscord.app",
     copyright: `Copyright © ${new Date().getFullYear()} Scratch For Discord && 469 && AHQ`,
     files: [
