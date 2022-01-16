@@ -10,9 +10,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     ipcRenderer.on("new-update", (e, version) => {
         let type = "patch";
-        if ((`__dirname}/../../package.json`).version - version < 1) {
+        if ((`${__dirname}/../../package.json`).version - version < 1) {
         type="minor";
-        } else if((`__dirname}/../../package.json`).version - version < 0.1) {
+        } else if((`${__dirname}/../../package.json`).version - version < 0.1) {
         type= "patch"
         } else {
             type= "major"
