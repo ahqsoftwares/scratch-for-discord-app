@@ -39,7 +39,7 @@ class RichPresence {
     setActivity(title) {
         this.client
             .setActivity({
-                details: title || "Scratch For Discord",
+                details: title || "Scratch For Discord 469",
                 startTimestamp: this.startedAt,
                 buttons: [
                     {

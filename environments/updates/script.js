@@ -1,5 +1,5 @@
 const ipcRenderer = require("electron").ipcRenderer;
-
+const files = require("../../../comment.json");
 document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("currentVersion").innerText = require(`${__dirname}/../../package.json`).version || "2.0.0-dev";
 
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
             type= "major"
         }
-        state.innerHTML = `Update found Type: <b>${type}</b> Tag: <b>${version}</b>!`;
+        state.innerHTML = `Update found Current Version Type: ${files.latest} Update Type: <b>${type}</b> Tag: <b>${version}</b>!`;
     });
 
     ipcRenderer.on("download-progress", (e, progress) => {
