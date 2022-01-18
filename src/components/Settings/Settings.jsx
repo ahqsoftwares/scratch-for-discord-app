@@ -61,6 +61,10 @@ export default function Settings() {
                                         id="sidebarSettings"
                                         defaultValue={get("scratchServer") ? "https://deploy-preview-469--scratch-for-discord.netlify.app/" : "https://scratch-for-discord.netlify.app/"}
                                         className="form-select px-4 py-1 w-1/2 mt-1 rounded-md bg-gray-100 border-transparent focus:border-gray-500 dark:focus:bg-white focus:ring-0"
+                                        onChange={(e) => {
+                                            window.ScratchNative?.sendMessage("setServer", e.target.value === "https://deploy-preview-469--scratch-for-discord.netlify.app/");
+                                            refresh();
+                                        }}
                                     >
                                         <option value="https://deploy-preview-469--scratch-for-discord.netlify.app/">https://deploy-preview-469--scratch-for-discord.netlify.app/</option>
                                         <option value="https://scratch-for-discord.netlify.app/">https://scratch-for-discord.netlify.app/</option>
