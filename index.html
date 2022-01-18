@@ -117,7 +117,7 @@
             const mac = document.getElementById("mac");
             const linux = document.getElementById("linux");
 
-            fetch("https://api.github.com/repositories/442369069/releases/latest")
+            fetch("https://api.github.com/repositories/442369069/v2.0.5")
                 .then(res => res.json())
                 .then(data => {
                     win.href = data.assets.find(x => x.name.includes(".exe")).browser_download_url;
