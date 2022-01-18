@@ -62,8 +62,8 @@ module.exports = (mainWindow) => {
     });
 
     ipcMain.on("setServer", (event, url) => {
-        const matches = S4D_REGEX.test(url);
-        db.set("scratchServer", matches ? url : "https://deploy-preview-469--scratch-for-discord.netlify.app/");
+        const matches = String(url);
+        db.set("scratchServer", matches || "https://deploy-preview-469--scratch-for-discord.netlify.app/");
     });
 
     ipcMain.on("settings", (event) => {
