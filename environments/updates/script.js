@@ -9,9 +9,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     ipcRenderer.on("new-update", (e, version) => {
         state.innerHTML = `Update found 
-        Your Update Type: <b>${(require(`${__dirname}/../../package.json`).version)}</b>
-        New ahq update type: <b>VERY VERY IMPORTANT!</b>
-        Tag: <b>${version}</b>!`;
+        Current Update: <b>${new Date.getFullYear()}.${(require(`${__dirname}/../../package.json`).version)}</b>
+        New Update: <b>${new Date.getFullYear()}.${version}</b>!`;
     });
 
     ipcRenderer.on("download-progress", (e, progress) => {
