@@ -61,13 +61,8 @@ module.exports = (mainWindow) => {
         db.set("darkMode", enabled);
     });
 
-    ipcMain.on("setServer", (event, url) => {
-        const matches = Boolean(url);
-        if (matches) {
-            db.set("scratchServer", "https://deploy-preview-469--scratch-for-discord.netlify.app/");
-        } else {
-            db.set("scratchServer", "https://scratch-for-discord.netlify.app/");
-        }
+    ipcMain.on("setServer", (event) => {
+        db.set("scratchServer", event);
     });
 
     ipcMain.on("settings", (event) => {
