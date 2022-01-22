@@ -59,7 +59,7 @@ export default function Settings() {
                                     <br />
                                     <select
                                         id="sidebarSettings"
-                                        defaultValue={String(get("scratchServer"))}
+                                        defaultValue={get("scratchServer")}
                                         className="form-select px-4 py-1 w-1/2 mt-1 rounded-md bg-gray-100 border-transparent focus:border-gray-500 dark:focus:bg-white focus:ring-0"
                                         onChange={(e) => {
                                             window.ScratchNative?.sendMessage("setServer", e.target.value);

@@ -61,8 +61,8 @@ module.exports = (mainWindow) => {
         db.set("darkMode", enabled);
     });
 
-    ipcMain.on("setServer", (event) => {
-        db.set("scratchServer", event);
+    ipcMain.on("setServer", (event, api) => {
+        db.set("scratchServer", api);
     });
 
     ipcMain.on("settings", (event) => {

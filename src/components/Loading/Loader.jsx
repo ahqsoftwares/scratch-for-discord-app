@@ -1,6 +1,6 @@
 import icon from "../../assets/icon.base64.js";
 
-export default function Loader({ loadingMessage = "Loading..." }) {
+export default function Loader({ loadingMessage = "Loading S4d 469 Dependencies..." }) {
     return (
         <div className="dark:bg-gray-800 bg-white h-screen w-full flex">
             <div className="m-auto">
