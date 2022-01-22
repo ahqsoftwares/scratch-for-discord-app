@@ -62,8 +62,12 @@ module.exports = (mainWindow) => {
     });
 
     ipcMain.on("setServer", (event, url) => {
-        const matches = String(url);
-        db.set("scratchServer", matches || "https://deploy-preview-469--scratch-for-discord.netlify.app/");
+        const matches = Boolean(url);
+        if (matches) {
+            db.set("scratchServer", "https://deploy-preview-469--scratch-for-discord.netlify.app/");
+        } else {
+            db.set("scratchServer", "https://scratch-for-discord.netlify.app/");
+        }
     });
 
     ipcMain.on("settings", (event) => {
