@@ -1,6 +1,6 @@
 {
   "name": "scratch-for-discord",
-  "version": "2.5.4-bug-fix",
+  "version": "2.5.5-better-s4d-update",
   "private": true,
   "main": "environments/main.js",
   "description": "Build your own discord bot with scratch blocks.",
