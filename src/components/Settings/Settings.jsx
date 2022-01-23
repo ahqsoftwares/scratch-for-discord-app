@@ -68,6 +68,7 @@ export default function Settings() {
                                     >
                                         <option value="https://deploy-preview-469--scratch-for-discord.netlify.app/">https://deploy-preview-469--scratch-for-discord.netlify.app/</option>
                                         <option value="https://scratch-for-discord.netlify.app/">https://scratch-for-discord.netlify.app/</option>
+                                        <option value="https://better-scratch-for-discord.netlify.app/">Better s4d</option>
                                     </select>
                                 </div>
                                 <div className="space-y-3">
