@@ -1,6 +1,6 @@
 {
   "name": "scratch-for-discord",
-  "version": "2.5.5-better-s4d-update",
+  "version": "2.5.6-s4d-general-bugfix",
   "private": true,
   "main": "environments/main.js",
   "description": "Build your own discord bot with scratch blocks.",
@@ -77,7 +77,7 @@
     "discord",
     "bot"
   ],
-  "author": "Scratch For Discord && AHQ && 469 s4d team",
+  "author": "AHQ & s4d 469 team",
   "bugs": {
     "url": "https://github.com/ahqsoftwares/scratch-for-discord-app/issues"
   },
